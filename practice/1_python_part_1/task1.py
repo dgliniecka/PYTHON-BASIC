@@ -19,7 +19,7 @@ Examples:
         list_to_clean.pop(findindex)
         print("List after deletion:",list_to_clean)
     else: 
-        print('Item does not exist in the initial list', list_to_clean)
+        print('Item does not exist in the initial list:', list_to_clean)
         
 delete_from_list(['A', 'B', 'C'], 'D')
 delete_from_list([1, 2, 3, 4, 3], 3)
