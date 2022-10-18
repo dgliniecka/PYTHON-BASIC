@@ -16,7 +16,7 @@ from typing import List, Any
 def delete_from_list(list_to_clean: List, item_to_delete: Any) -> List:
     if item_to_delete in list_to_clean:
         print('Initial list:', list_to_clean)
-        print('Item to delete:', item_to_delete)
+        print('Item to delete: , item_to_delete)
         list_to_clean = list(set(list_to_clean))
         findindex = list_to_clean.index(item_to_delete)
         list_to_clean.pop(findindex)
