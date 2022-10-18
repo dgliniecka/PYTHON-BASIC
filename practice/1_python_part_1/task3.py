@@ -13,7 +13,17 @@ Examples:
     ''
 """
 from typing import Iterable
-
-
 def build_from_unique_words(*lines: Iterable[str], word_number: int) -> str:
-    ...
+  result = ""
+  for line in lines:
+    line = line.split()
+    line = sorted(list(set(line)))
+    if word_number in range(len(line)-1):
+      result = result + " " + line[word_number]
+  print('Final string: ', result)
+  return result
+
+build_from_unique_words('a b c', '1 1 1 2 3', 'cat dog milk', word_number=1)
+build_from_unique_words('a b c', '', 'cat dog milk', word_number=0)
+build_from_unique_words('1 2', '1 2 3', word_number=10)
+build_from_unique_words(word_number=10)
