@@ -29,7 +29,5 @@ def division(x: int, y: int) -> typing.Union[None, int]:
     else:
         result = x/y
         print(result)
-        return result
         print('Division finished')
-
-division(1, 1)
+        return result
