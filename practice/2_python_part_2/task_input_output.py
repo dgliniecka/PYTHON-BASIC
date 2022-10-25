@@ -37,8 +37,6 @@ def read_numbers(n: int) -> str:
         print(str_2)
         return str_2
 
-read_numbers(3)
-
 
 
 
